@@ -11,7 +11,7 @@ function XStopWatch() {
             setName("Stop");
             intervalRef.current = setInterval(() => {
                 setSec((prevSec) => {
-                    if(prevSec < 60){
+                    if(prevSec < 59){
                         return prevSec + 1;
                     }else{
                         setMin((prevMin) => prevMin + 1);
