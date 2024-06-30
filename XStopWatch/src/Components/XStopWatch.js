@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 function XStopWatch() {
     const [min, setMin] = useState(0);
     const [sec, setSec] = useState(0);
-    const [intervalId, setIntervalId] = useState(null);
-    
     const [name, setName] = useState("Start");
+    const intervalRef = useRef();
 
     const onclk = () => {
         if(name == "Start"){
             setName("Stop");
-            const id = setInterval(() => {
+            intervalRef.current = setInterval(() => {
                 setSec((prevSec) => {
                     if(prevSec < 60){
                         return prevSec + 1;
@@ -21,15 +20,14 @@ function XStopWatch() {
                 })
             }, 1000);
 
-            setIntervalId(id);
         }else{
             setName("Start");
-            clearInterval(intervalId);
+            clearInterval(intervalRef.current);
         }
     }
 
     const reset = () => {
-        clearInterval(intervalId);
+        clearInterval(intervalRef.current);
         setSec(0);
         setMin(0);
         setName("Start");
