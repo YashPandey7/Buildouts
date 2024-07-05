@@ -6,6 +6,7 @@ import XCounter from "./Components/XCounter";
 import XCalculator from "./Components/XCalculator";
 import XCountrySearch from "./Components/XCountrySearch";
 import XClassComp from "./Components/XClassComp";
+import XPagination from "./Components/XPagination";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
       {/* <XCounter/> */}
       {/* <XCalculator/> */}
       {/* <XCountrySearch/> */}
-      <XClassComp/>
+      {/* <XClassComp/> */}
+      <XPagination/>
     </>
   );
 }
