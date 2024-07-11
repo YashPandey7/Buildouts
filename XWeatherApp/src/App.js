@@ -7,7 +7,10 @@ import React from "react";
 // import XCountrySearch from "./Components/XCountrySearch";
 // import XClassComp from "./Components/XClassComp";
 // import XPagination from "./Components/XPagination";
-import XLogin from "./Components/XLogin";
+// import XLogin from "./Components/XLogin";
+// import XState from "./Components/XState";
+import XWeatherApp from "./Components/XWeatherApp";
+// import XSpellCheck from "./Components/XSpellCheck";
 
 const App = () => {
   return (
@@ -20,7 +23,10 @@ const App = () => {
       {/* <XCountrySearch/> */}
       {/* <XClassComp/> */}
       {/* <XPagination/> */}
-      <XLogin/>
+      {/* <XLogin/> */}
+      {/* <XState/> */}
+      <XWeatherApp/>
+      {/* <XSpellCheck/> */}
     </>
   );
 }
