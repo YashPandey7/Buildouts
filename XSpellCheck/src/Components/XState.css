@@ -1,0 +1,19 @@
+#field1{
+    width:350px;
+    cursor:pointer;
+    padding:10px;
+}
+
+#field2{
+    width: 150px;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#field3{
+    width: 150px;
+    cursor: pointer;
+    padding: 10px;
+}
